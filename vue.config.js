@@ -96,11 +96,11 @@ module.exports = {
         hotOnly: false,
         proxy: {//这个是配置代理的配置
             '/apl': {
-                target: 'http://test.danajia.com.cn',
+                target: 'http://***.danajia.com.cn',
                 ws: true,
                 changeOrigin: true,
                 pathRewrite: {//这个一定要加上，要不代理不起作用的
-                    '^/apl': 'http://test.danajia.com.cn'//路径重写
+                    '^/apl': 'http://***.danajia.com.cn'//路径重写
                 }
             },
         },
